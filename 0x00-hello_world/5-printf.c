@@ -4,8 +4,7 @@
  *
  * Return:return (0) or nothing
 */
-
-int main()
+int main(void)
 {	
 
 	printf("with proper grammar, but the outcome is a piece of art,\n");
