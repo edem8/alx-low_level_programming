@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- *main - prints using printf, 
- * without using puts
- *
- *Return: return (0) or nothing
+*main - prints using printf, 
+*without using puts
+*
+*Return: return (0) or nothing
 */
 int main(void)
 {	
