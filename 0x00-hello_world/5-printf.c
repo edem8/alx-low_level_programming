@@ -7,7 +7,7 @@
 
 int main()
 {	
-	char str1[22]="with proper grammer,";
+	char str1[22]="with proper grammar,";
 	char str2[36]="but the outcome is a piece of art,";
-	printf("%s %s.\n",str1,str2);
+	printf("%s %s\n",str1,str2);
 }
