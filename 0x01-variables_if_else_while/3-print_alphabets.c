@@ -10,11 +10,11 @@ int main(void)
 	char ra_ = 'a';
 	char cap = 'A';
 
-	for (;ra_ <= 'z'; ra_++)
+	for (; ra_ <= 'z'; ra_++)
 	{
 		putchar(ra_);
 	}
-	for (;cap <= 'Z'; cap++)
+	for (; cap <= 'Z'; cap++)
 	{
 		putchar(cap);
 	}
