@@ -13,8 +13,10 @@ int main(void)
 	{
 		putchar(ok);
 		if (ok != 57)
+		{
 			putchar(',');
 			putchar(' ');
+		}
 	}
 	putchar('\n');
 	return (0);
