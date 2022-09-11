@@ -7,17 +7,17 @@
 */
 int main(void)
 {
-        int i = 48;
+	int i = 48;
 
-        for (; i < 56 ; i++)
-        {
-                int a = 1;
+	for (; i < 56 ; i++)
+	{
+		int a = 1;
 
-                for (; a < 57 ; a++)
-                {
+		for (; a < 57 ; a++)
+		{
 			int c = 2;
 
-			for (; c <58 ; c++)
+			for (; c < 58 ; c++)
 			{
 				if (i < a && a < c)
 				{
@@ -33,8 +33,8 @@ int main(void)
 			}
 		}
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
 
 
