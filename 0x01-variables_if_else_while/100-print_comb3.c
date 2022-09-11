@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - printing
+ *main - printing double numbers
  *
- * Return: return (0)
+ *Return: return (0) or nothing
 */
 int main(void)
 {
-	int n, m;
+	int i = 48;
 
-	for (n = 48; n <= 56; n++)
+	for (; i < 57 ; i++)
 	{
-		for (m = 49; m <= 57; m++)
+		int a = 1;
+		
+		for (; a < 58 ; a++)
 		{
-			if (m > n)
+			if (i < a)
 			{
-				putchar(n);
-				putchar(m);
-				if (n != 56 || m != 57)
+				putchar(i);
+				putchar(a);
+				if (i != 56 && a != 58)
 				{
 					putchar(',');
 					putchar(' ');
@@ -26,5 +28,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return (0);
+	return 0;
 }
+
