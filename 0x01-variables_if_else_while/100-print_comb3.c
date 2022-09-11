@@ -12,7 +12,6 @@ int main(void)
 	for (; i < 57 ; i++)
 	{
 		int a = 1;
-		
 		for (; a < 58 ; a++)
 		{
 			if (i < a)
