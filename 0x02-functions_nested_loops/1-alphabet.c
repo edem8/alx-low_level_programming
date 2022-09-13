@@ -1,12 +1,18 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- *main - check the code
+ * main - code for aplhabet printing
  *
- *Return: return (0)
+ * Return: return (0)
 */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char a = 97;
+
+	for (; a < 123 ; a++)
+	{
+		putchar(a);
+	}
+	putchar('\n');
+	return;
 }
