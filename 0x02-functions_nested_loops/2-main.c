@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main_2.h"
+#include "main.h"
 
 /**
  * main - printing ten times
