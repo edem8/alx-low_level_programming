@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - code for aplhabet printing
+ * print_alphabet - code for aplhabet printing
  *
  * Return: return (0)
 */
@@ -14,5 +14,4 @@ void print_alphabet(void)
 		putchar(a);
 	}
 	putchar('\n');
-	return;
 }
