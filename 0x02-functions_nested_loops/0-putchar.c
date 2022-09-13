@@ -10,7 +10,7 @@ int main(void)
 {
 		char str[10];
 
-		strcpy(str," _putchar");
+		strcpy(str, "_putchar");
 		printf("%s\n", str);
 		return (0);
 }
