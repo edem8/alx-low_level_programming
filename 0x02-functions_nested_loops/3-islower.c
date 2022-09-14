@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>
 /**
  * _islower - printing (0) or (1)
  * @c: parameter needed for execution
@@ -7,6 +7,10 @@
 */
 int _islower(int c)
 {
-	return (c >= 'a' && c <= 'z');
+	if ( islower(c) )
+		return (1);
+	else 
+		return (0);
+		
 		
 }
