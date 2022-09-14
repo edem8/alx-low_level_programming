@@ -15,7 +15,3 @@ int _islower(int c)
 		
 }
 
-void _putchar(int a)
-{
-	putchar(a);
-}

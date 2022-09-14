@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
+void _putchar(int a);
 /**
  * test_islower - Test the _islower function
  *
  * @n: Number to pass
  */
+
 void test_islower(int n)
 {
 	int r;
@@ -12,6 +14,11 @@ void test_islower(int n)
 	r = _islower(n);
 	_putchar(r + '0');
 	
+}
+
+void _putchar(int a)
+{
+	putchar (a);
 }
 
 /**

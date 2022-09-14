@@ -3,6 +3,4 @@
 #include <ctype.h>
 #include <stdio.h>
 int _islower(int c);
-void _putchar(int a);
-
 
