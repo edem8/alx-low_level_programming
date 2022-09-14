@@ -1,5 +1,18 @@
 #include <stdio.h>
 #include "main.h"
+/**
+ * test_islower - Test the _islower function
+ *
+ * @n: Number to pass
+ */
+void test_islower(int n)
+{
+	int r;
+
+	r = _islower(n);
+	_putchar(r + '0');
+	
+}
 
 /**
  * main - check the code
@@ -8,14 +21,10 @@
 */
 int main (void)
 {
-	int r;
 
-	r = _islower('H');
-	_putchar(r + '0');
-	r = _islower('o');
-	_putchar(r + '0');
-	r = _islower(108);
-	_putchar(r + '0');
+	test_islower('H');
+	test_islower('o');
+	test_islower(108);
 	_putchar('\n');
 	return (0);
 }
