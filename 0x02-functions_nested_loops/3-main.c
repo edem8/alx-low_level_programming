@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * mian - printing one or zero
+ * main - check the code
  *
- * Return: return (1) or (0)
+ * Return: Always 0.
 */
 int main (void)
 {
