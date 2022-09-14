@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-void _putchar(int a);
+
 /**
  * test_islower - Test the _islower function
  *
@@ -12,14 +12,11 @@ void test_islower(int n)
 	int r;
 
 	r = _islower(n);
-	_putchar(r + '0');
+	putchar(r + '0');
 	
 }
 
-void _putchar(int a)
-{
-	putchar (a);
-}
+
 
 /**
  * main - check the code
@@ -32,6 +29,6 @@ int main (void)
 	test_islower('H');
 	test_islower('o');
 	test_islower(108);
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
