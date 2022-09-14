@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * main - pritning last_digits 
- * @c: parameter to pass
- * Return: return (0) or (1)
+ *print_last_digit - pritning last_digits
+ *@c: parameter to pass
+ *Return: return (0) or (1)
 */
 int print_last_digit(int c)
 {
