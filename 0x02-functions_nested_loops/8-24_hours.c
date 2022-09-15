@@ -3,7 +3,6 @@
 
 /**
  * jack_bauer - printing time left for jack bauer
- * 
  * Return: return (0) or nothing
 */
 void jack_bauer(void)
@@ -16,9 +15,11 @@ void jack_bauer(void)
 
 		for (; j < 60; j++)
 		{
-			printf("%02d", i);
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
 			_putchar(':');
-			printf("%02d", j);
+			_putchar((j / 10) + '0');
+			_putchar((j % 10) + '0');
 			_putchar('\n');
 		}
 	}
