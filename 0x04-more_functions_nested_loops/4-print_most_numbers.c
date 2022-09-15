@@ -2,8 +2,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - print number except 2 and 4
- * Return: return nohing
+ * print_most_numbers - print number except (2) and (4)
+ * 
+ * Return: return (0) or nothing
 */
 void print_most_numbers(void)
 {

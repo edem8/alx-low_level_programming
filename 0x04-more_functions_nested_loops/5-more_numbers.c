@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- *more_numbers - printing ten times
+ * more_numbers - printing ten times
  *
- *Return: return nothing
+ * Return: return (0) or nothing
 */
 void more_numbers(void)
 {
