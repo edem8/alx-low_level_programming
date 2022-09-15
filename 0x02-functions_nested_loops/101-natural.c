@@ -9,6 +9,7 @@ int main(void)
 {
 	unsigned long int num3, num5, num;
 	int a = 0;
+
 	num3 = 0;
 	num5 = 0;
 	num = 0;
