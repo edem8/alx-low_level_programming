@@ -3,7 +3,7 @@
 
 /**
  * _isdigit - Check if its a digit
- * @c: parameter to pass 
+ * @c: parameter to pass
  * Return: return (0) or (1)
 */
 int _isdigit(int c)
