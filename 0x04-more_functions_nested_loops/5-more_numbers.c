@@ -2,7 +2,8 @@
 #include "main.h"
 
 /**
- *more_numbers - printing ten times numbers from zero to fourteen
+ *more_numbers - printing ten times
+ *
  *Return: return nothing
 */
 void more_numbers(void)
