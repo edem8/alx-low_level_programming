@@ -2,15 +2,14 @@
 #include "main.h"
 
 /**
- * more_numbers - printing 10 times numbers from 0 to 14
- *
- * Return: return nothing
+ *more_numbers - printing ten times numbers from zero to fourteen
+ *Return: return nothing
 */
 void more_numbers(void)
 {
 	int i = 0;
 
-	for (; i < 11; i++)
+	for (; i < 10; i++)
 	{
 		int j = 0;
 
