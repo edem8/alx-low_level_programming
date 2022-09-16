@@ -1,12 +1,11 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
- * main - printing and replacing with Fizz Buzz or FizzBuzz
+ * print_Fizz_Buzz - printing and replacing with Fizz Buzz or FizzBuzz
  *
  * Return: return (0) or nothing
  */
-int main(void)
+int print_Fizz_Buzz(void)
 {
 	int i = 1;
 
