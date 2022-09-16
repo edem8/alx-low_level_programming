@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdlib.h>
+#include <stdio.h>
 /**
  * main - printing and replacing with Fizz Buzz or FizzBuzz
  *
@@ -33,5 +33,6 @@ int main(void)
 		}
 	}
 	printf("\n");
+
 	return (0);
 }
