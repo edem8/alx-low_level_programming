@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - printing and replacing with Fizz Buzz or FizzBuzz
@@ -21,6 +22,8 @@ int main(void)
 		}
 		else if ((i % 5) == 0 && (i % 3) != 0)
 			printf(" Buzz");
+		else if (i == 1)
+			printf(" %d", i);
 		else
 			printf(" %d", i);
 	}
