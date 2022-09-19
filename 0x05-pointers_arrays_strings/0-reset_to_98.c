@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - updating value using pointer parameter
+ * reset_to_98 - updating value using pointer parameter
  * @n: parameter to pass
  * Return: return nothing
  */
