@@ -9,5 +9,14 @@
  */
 void print_rev(char *s)
 {
-	puts(strrev(s));
+	int i = 0;
+	int length = strlen(s);
+	int hold;
+
+	for (; i < length / 2; i++)
+	{
+		hold = s[i];
+		s[i] = s[length - i - 1];
+		s[length - i - 1] = hold;
+	}
 }
