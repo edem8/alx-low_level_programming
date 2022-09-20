@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int s[];
+	int s[100];
 	int i = 0;
 	int j = 0;
 	int n;
