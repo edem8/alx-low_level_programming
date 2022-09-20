@@ -16,6 +16,7 @@ void print_rev(char *s)
 	{
 		if (s[len - i] == '\0')
 		{
+			r[strlen(s) - 1] = s[i]; 
 		}
 		else
 		{
