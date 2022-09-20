@@ -10,11 +10,17 @@ void print_rev(char *s)
 {
 	int i = 0;
 	int len = strlen(s) - 1;
-	char r[1000];
+	char r[strlen(s)];
 
 	for (; i <= len ; i++)
 	{
-		r[i] = s[len - i];
+		if (s[len - i] == '\0')
+		{
+		}
+		else
+		{
+			r[i] = s[len - i];
+		}
 	}
 	puts(r);
 }
