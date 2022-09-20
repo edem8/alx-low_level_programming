@@ -10,11 +10,24 @@ void print_rev(char *s)
 {
 	int i = 0;
 	int len = strlen(s) - 1;
-	char r[502];
+	char b[100];
 
-	for (; i <= len ; i++)
+	if (strlen(s) < 100)
 	{
-		r[i] = s[len - i];
+		for (; i <= len ; i++)
+		{
+			b[i] = s [len - i];
+		}
+		puts(b);
 	}
-	puts(r);
+	else
+	{
+		char r[500];
+		
+		for (; i <= len ; i++)
+		{
+			r[i] = s[len - i];
+		}
+		puts(r);
+	}
 }
