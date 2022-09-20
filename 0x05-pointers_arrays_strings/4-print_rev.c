@@ -1,6 +1,5 @@
-#include <stdio.h>
 #include "main.h"
-#include <string.h>
+
 
 /**
  * print_rev - priting strings in reverse
@@ -9,8 +8,14 @@
  */
 void print_rev(char *s)
 {
-	int i = 0;
-	char start;
-	int len = 0;
+	int i = strlen(s);
 
+	while (s[i] != '\0')
+	{
+		if (i > 0)
+		{
+			printf("%s", &s[i]);
+		}
+		i--;
+	}
 }
