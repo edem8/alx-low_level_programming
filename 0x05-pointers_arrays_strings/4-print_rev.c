@@ -14,14 +14,7 @@ void print_rev(char *s)
 
 	for (; i <= len ; i++)
 	{
-		if (s[len - i] == '\0')
-		{
-			r[strlen(s) - 1] = s[i]; 
-		}
-		else
-		{
-			r[i] = s[len - i];
-		}
+		r[i] = s[len - i];
 	}
 	puts(r);
 }
