@@ -7,7 +7,7 @@
  * n: number of characters to concatenate
  * Return: return a pointer
  */
-char *_strncat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	return (strncat(dest, src, n));
 }
