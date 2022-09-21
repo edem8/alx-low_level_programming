@@ -15,6 +15,10 @@ char *string_toupper(char *a)
 	{
 		r[i] = toupper(a[i]);
 	}
-	a = r;
+	i = i - len;
+	for (; i  < len ; i++)
+	{
+		a[i] = r[i];
+	}
 	return (a);
 }
