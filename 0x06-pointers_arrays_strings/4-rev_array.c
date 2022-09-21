@@ -9,15 +9,20 @@
 void reverse_array(int *a, int n)
 {
 	int len = n - 1;
+	int i = 0;
+	int r[13];
 
 	while (len >= 0)
 	{
-		printf("%d", a[len]);
-		if (len != 0)
-		{
-			printf(", ");
-		}
+		r[i] = a[len];
 		len--;
+		i++;
 	}
-	printf("\n");
+	len++;
+	while (len < n)
+	{
+		a[len] = r[len];
+		len++;
+	}
 }
+
