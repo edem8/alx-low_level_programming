@@ -16,7 +16,7 @@ char *leet(char *a)
 	{
 		int j = 0;
 		int len2 = strlen(b);
-		
+
 		for (; j < len2 ; j++)
 		{
 			if (a[i] == b[j])
@@ -24,4 +24,4 @@ char *leet(char *a)
 		}
 	}
 	return (a);
-}	
+}
