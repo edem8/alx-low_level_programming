@@ -19,8 +19,14 @@ char *cap_string(char *a)
 			++i;
 			a[i] = toupper(a[i]);
 		}
-		if (a[i] == '\t' || a[i] == '\n')
+		if (a[i] == '\n')
 		{
+			++i;
+			a[i] = toupper(a[i]);
+		}
+		if (a[i] == '\t')
+		{
+			a[i] = ' ';
 			++i;
 			a[i] = toupper(a[i]);
 		}
