@@ -9,11 +9,21 @@ char *cap_string(char *a)
 {
 	int len = strlen(a);
 	int i = 0;
-	char r[100];
 
 	for (; i < len ; i++)
 	{
 		if (i == 0)
-			r[i] = toupper(a[i]);
+			a[i] = toupper(a[i]);
+		if (a[i] == ' ' || a[i] == '.')
+		{
+			++i;
+			a[i] = toupper(a[i]);
+		}
+		if (a[i] == '\t' || a[i] == '\n')
+		{
+			++i;
+			a[i] = toupper(a[i]);
+		}
+	}
 	return (a);
 }
