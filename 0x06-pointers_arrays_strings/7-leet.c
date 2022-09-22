@@ -14,8 +14,14 @@ char *leet(char *a)
 
 	for (; i < len ; i++)
 	{
-		if (a[i] == b[i])
-			a[i] = c[i];
+		int j = 0;
+		int len2 = strlen(b);
+		
+		for (; j < len2 ; j++)
+		{
+			if (a[i] == b[j])
+			a[i] = c[j];
+		}
 	}
 	return (a);
 }	
