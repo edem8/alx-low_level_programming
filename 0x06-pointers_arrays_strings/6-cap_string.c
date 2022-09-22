@@ -11,16 +11,19 @@ char *cap_string(char *a)
 	int i = 0;
 	char b[13] = {'\t','\n',' ',';','.','!','?','"','(',')','{','}'};
 
-	for (; i < len ; i++)
+	for (; a[i] != '\0' ; i++)
 	{
+		if (i == 0 && a[i] >= 'a' && a[i] <= 'z')
+			a[i] -=32;
 		int j = 0;
 
 		for (; j < 13 ; j++)
 		{
-			if (a[i] == b[0])
-				a[i] = ' ';
 			if (a[i] == b[j])
-				a[i + 1] = toupper(a[i + 1]);
+			{
+				if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
+					a[i + 1] -= 32;
+			}
 		}
 	}
 	return (a);
