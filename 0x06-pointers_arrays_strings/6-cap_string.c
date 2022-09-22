@@ -15,25 +15,5 @@ char *cap_string(char *a)
 	{
 		if (i == 0)
 			r[i] = toupper(a[i]);
-		else if (a[i - 1] == ' ' || a[i - 1] == '!')
-		{
-			r[i] = toupper(a[i]);
-		}
-		else if (a[i - 1] == '\t' || a[i - 1] == '.')
-		{
-			r[i] = toupper(a[i]);
-		}
-		else if (a[i - 1] == '.' & a[i] == '\n')
-		{
-		}
-		else if (a[i - 1] == '\n')
-		{
-			r[i] = toupper(a[i]);
-		}
-		else
-		
-			r[i] = a[i];
-	}
-	a = r;
 	return (a);
 }
