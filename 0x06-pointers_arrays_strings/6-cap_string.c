@@ -14,6 +14,10 @@ char *cap_string(char *a)
 	{
 		if (i == 0)
 			a[i] = toupper(a[i]);
+		if (a[i] == '\t')
+		{
+			a[i] = ' ';
+		}
 		if (a[i] == ' ' || a[i] == '.')
 		{
 			++i;
@@ -23,11 +27,6 @@ char *cap_string(char *a)
 		{
 			++i;
 			a[i] = toupper(a[i]);
-		}
-		else if (a[i] == '\t')
-		{
-			a[i + 1] = toupper(a[i + 1]);
-			a[i] = ' ';
 		}
 	}
 	return (a);
