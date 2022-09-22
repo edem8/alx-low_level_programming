@@ -7,14 +7,15 @@
  */
 char *leet(char *a)
 {
-	int len = strlen(s);
+	int len = strlen(a);
 	int i = 0;
-	char b[] = {aAeEoOtTlL};
-	char c[] = {4433007711};
+	char b[] = "aAeEoOtTlL";
+	char c[] = "4433007711";
 
 	for (; i < len ; i++)
 	{
 		if (a[i] == b[i])
 			a[i] = c[i];
 	}
+	return (a);
 }	
