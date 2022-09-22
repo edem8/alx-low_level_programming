@@ -24,10 +24,10 @@ char *cap_string(char *a)
 			++i;
 			a[i] = toupper(a[i]);
 		}
-		if (a[i] == '\t')
+		else if (a[i] == '\t')
 		{
-			a[i] = ' ';
 			a[i + 1] = toupper(a[i + 1]);
+			a[i] = ' ';
 		}
 	}
 	return (a);
