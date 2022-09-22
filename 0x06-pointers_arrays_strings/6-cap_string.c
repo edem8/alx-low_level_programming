@@ -27,8 +27,6 @@ char *cap_string(char *a)
 		if (a[i] == '\t')
 		{
 			a[i] = ' ';
-			++i;
-			a[i] = toupper(a[i]);
 		}
 	}
 	return (a);
