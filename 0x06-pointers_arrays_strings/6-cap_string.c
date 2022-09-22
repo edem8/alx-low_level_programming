@@ -9,20 +9,18 @@ char *cap_string(char *a)
 {
 	int len = strlen(a);
 	int i = 0;
+	char b[13] = {'\t','\n',' ',';','.','!','?','"','(',')','{','}'};
 
 	for (; i < len ; i++)
 	{
-		if (i == 0)
-			a[i] = toupper(a[i]);
-		if (a[i] == ' ' || a[i] == '.')
+		int j = 0;
+
+		for (; j < 13 ; j++)
 		{
-			++i;
-			a[i] = toupper(a[i]);
-		}
-		if (a[i] == '\n' || a[i] == '\t')
-		{
-			++i;
-			a[i] = toupper(a[i]);
+			if (a[i] == b[0])
+				a[i] = ' ';
+			if (a[i] == b[j])
+				a[i + 1] = toupper(a[i + 1]);
 		}
 	}
 	return (a);
