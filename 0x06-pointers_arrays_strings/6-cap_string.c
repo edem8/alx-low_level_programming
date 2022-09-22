@@ -14,16 +14,12 @@ char *cap_string(char *a)
 	{
 		if (i == 0)
 			a[i] = toupper(a[i]);
-		if (a[i] == '\t')
-		{
-			a[i] = ' ';
-		}
 		if (a[i] == ' ' || a[i] == '.')
 		{
 			++i;
 			a[i] = toupper(a[i]);
 		}
-		if (a[i] == '\n')
+		if (a[i] == '\n' || a[i] == '\t')
 		{
 			++i;
 			a[i] = toupper(a[i]);
