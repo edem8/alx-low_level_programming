@@ -9,21 +9,22 @@ char *cap_string(char *a)
 {
 	int len = strlen(a);
 	int i = 0;
-	char b[13] = {'\t','\n',' ',';','.','!','?','"','(',')','{','}'};
 
-	for (; a[i] != '\0' ; i++)
+	for (; i < len ; i++)
 	{
-		if (i == 0 && a[i] >= 'a' && a[i] <= 'z')
-			a[i] -=32;
-		int j = 0;
-
-		for (; j < 13 ; j++)
+		if (a[i] == a[0])
 		{
-			if (a[i] == b[j])
-			{
-				if (a[i + 1] >= 'a' && a[i + 1] <= 'z')
-					a[i + 1] -= 32;
-			}
+			a[i] = toupper(a[i]);
+		}
+		if (a[i] == '.' || a[i] == ' ')
+		{
+			++i;
+			a[i] = toupper(a[i]);
+		}
+		if (a[i] == '\n' || a[i] == '\t')
+		{
+			++i;
+			a[i] = toupper(a[i]);
 		}
 	}
 	return (a);
