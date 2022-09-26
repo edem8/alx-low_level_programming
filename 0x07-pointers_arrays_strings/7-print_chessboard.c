@@ -11,18 +11,10 @@ void print_chessboard(char (*a)[8])
 
 	for (i = 0; i < 64 ; i++)
 	{
-		if (i == 8 || i == 16 || i == 24)
-			_putchar('\n');
-		if (i == 32 || i == 40 || i == 48)
-			_putchar('\n');
-		if (i == 56)
+		for (j = 0; j < 8; j++)
 		{
-			_putchar('\n');
-			_putchar((*a)[i]);
+			_putchar(a[i][j]);
 		}
-		else
-			_putchar((*a)[i]);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
-
