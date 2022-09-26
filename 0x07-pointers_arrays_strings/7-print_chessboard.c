@@ -9,14 +9,20 @@ void print_chessboard(char (*a)[8])
 {
 	int i, j;
 
-	for (i = 0; i < 8 ; i++)
+	for (i = 0; i < 64 ; i++)
 	{
-		for (j = 0; j < 8 ; j++)
-		{
-			_putchar(*(a[i]));
-			_putchar(*(a[j]));
+		if (i == 8 || i == 16 || i == 24)
 			_putchar('\n');
+		if (i == 32 || i == 40 || i == 48)
+			_putchar('\n');
+		if (i == 56)
+		{
+			_putchar('\n');
+			_putchar((*a)[i]);
 		}
+		else
+			_putchar((*a)[i]);
 	}
+	_putchar('\n');
 }
 
