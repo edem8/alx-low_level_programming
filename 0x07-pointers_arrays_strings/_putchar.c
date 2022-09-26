@@ -5,7 +5,7 @@
  * @c: parameter to pass
  * Return: return a character
  */
-void _putchar(char *c)
+void _putchar(char c)
 {
 	putchar(c);
 }
