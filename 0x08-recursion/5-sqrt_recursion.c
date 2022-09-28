@@ -12,7 +12,7 @@ int _sqrt_recursion(int n)
 		return (-1);
 	int s;
 
-	s = (sqrt(n) - 1) * (sqrt(n) - 1);
+	s = ((int)sqrt(n) - 1) * ((int)sqrt(n) - 1);
 	if ((int)(sqrt(n) - s) % 2 != 0)
 		return (-1);
 	else
