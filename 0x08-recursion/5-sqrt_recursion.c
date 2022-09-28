@@ -1,6 +1,5 @@
 #include "main.h"
-#include <math.h>
-
+int actual_sqrt(int n, int a);
 /**
  * _sqrt_recursion - natural square root of a number
  * @n: parameter to pass
@@ -8,13 +7,22 @@
  */
 int _sqrt_recursion(int n)
 {
-	int s = 0;
-
 	if (n < 0)
 		return (-1);
-	s += ((int)sqrt(n) - 1) * ((int)sqrt(n) - 1);
-	if ((int)(sqrt(n) - s) % 2 != 0)
+	return (actual_sqrt(n,0));
+}
+
+/**
+ * actual_sqrt - printing our sqrt now
+ * @n: number to pass
+ * @a: iterator
+ * Return: the sqrt
+ */
+int actual_sqrt(int n, int a)
+{
+	if (a * a > n)
 		return (-1);
-	else
-		return (sqrt(n));
+	if (a * a == n)
+		return (a);
+	return (actual_sqrt(n, (n - 1)));
 }
