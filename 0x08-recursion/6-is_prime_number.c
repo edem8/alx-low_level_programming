@@ -1,7 +1,7 @@
 #include "main.h"
 int prime_check(int a, int n);
 /**
- * is_prime_number(int n) - printing 1 if primenumber and zero otherwise
+ * is_prime_number - printing 1 if primenumber and zero otherwise
  * n: number to check
  * Return: one or zero
  */
