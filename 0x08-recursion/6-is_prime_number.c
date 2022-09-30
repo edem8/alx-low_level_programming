@@ -2,7 +2,7 @@
 int prime_check(int a, int n);
 /**
  * is_prime_number - printing 1 if primenumber and zero otherwise
- * n: number to check
+ * @n: number to check
  * Return: one or zero
  */
 int is_prime_number(int n)
