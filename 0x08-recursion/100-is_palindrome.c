@@ -11,12 +11,12 @@ int is_palindrome(char *s)
 	int i;
 
 	i = _strlen(s) - 1;
-	return (check_palindrome(0,i,s));
+	return (check_palindrome(0, i, s));
 }
 
 /**
  * _strlen -  check length of the string
- * s: string to check
+ * @s: string to check
  * Return: return 0 0r len
  */
 int _strlen(char *s)
@@ -28,7 +28,7 @@ int _strlen(char *s)
 }
 
 /**
- * check-palindrome - actual check
+ * check_palindrome - actual check
  * @l: left index
  * @r: right index
  * @p: pssible palindrome
