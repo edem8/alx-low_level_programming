@@ -4,9 +4,9 @@
  * main - print the product of two numbers
  * @argc: number of arguments
  * @argv: array of arguments
- * Rteurn: return (0) or (-1)
+ * Return: return (0) or (-1)
  */
-int main(int argc, char **argv)
+int main(int argc, char **argv __attribute__((unused)))
 {
 	int i = 1;
 	int mul = 1;
