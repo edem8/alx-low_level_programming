@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * main - print the product of two numbers
  * @argc: number of arguments
@@ -13,7 +12,7 @@ int main(int argc, char **argv __attribute__((unused)))
 
 	if (argc > 1)
 	{
-		for (; i < argc; i++)
+		for (i; i < argc; i++)
 		{
 			mul *= atoi(argv[i]);
 		}
