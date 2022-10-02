@@ -3,7 +3,7 @@
 /**
  * main - prints the name of a program
  * @argc: number of arguments
- * @agrv: array of arguments
+ * @argv: array of arguments
  * Return: return (0)
  */
 int main(int argc, char **argv)
