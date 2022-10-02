@@ -22,6 +22,7 @@ int main(int argc, char **argv __attribute__((unused)))
 	else
 	{
 		printf("Error\n");
+		return (1);
 	}
 	return (0);
 }
