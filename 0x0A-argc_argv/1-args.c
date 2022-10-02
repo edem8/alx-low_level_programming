@@ -6,11 +6,8 @@
  * @argv: array of arguments
  * Return: return (0)
  */
-int main(int argc, char **argv)
+int main(int argc, char **argv __attribute__((unused)))
 {
-	if (argc > 1)
-		printf("%d\n", argc - 1);
-	else
-		printf("%d\n", 0);
+	printf("%d\n", argc - 1);
 	return (0);
 }
