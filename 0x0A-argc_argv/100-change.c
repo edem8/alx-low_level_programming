@@ -4,7 +4,7 @@
  * main - printing minimum number of coins to make change
  * @argc: number of arguments
  * @argv:array of arguments
- * Rteurn: return (0) or (1)
+ * Return: return (0) or (1)
  */
 int main(int argc, char **argv)
 {
