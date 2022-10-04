@@ -1,0 +1,18 @@
+#include "main.h"
+
+/**
+ * create_array - create an array of characters and intialise with a charcater
+ * @c: character to initalize
+ * @size: size of array
+ * Return: return NULL or pointer 
+ */
+char *create_array(unsigned int size, char c)
+{
+	char *arr;
+
+	arr = malloc(sizeof(char) * size);
+	arr[0] = c;
+	if (size == 0)
+		return (NULL);
+	return (arr);
+}
