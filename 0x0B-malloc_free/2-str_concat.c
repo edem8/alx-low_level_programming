@@ -8,11 +8,11 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char * arr;
+	char *arr;
 	if (s1 == NULL)
-		*s1 = " ";
+		*s1 = ' ';
 	if (s2 == NULL)
-		*s2 = " ";
-	*arr = strcat(s1, s2);
+		*s2 = ' ';
+	arr = strcat(s1, s2);
 	return (strdup(arr));
 }
