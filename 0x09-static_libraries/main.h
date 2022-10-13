@@ -25,6 +25,14 @@ char *_strchr(char *s, char c);
 unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
-
+void swap_int(int *a, int *b);
+int mul(int a, int b);
+void print_triangle(int size);
+void print_number(int n);
+void reverse_array(int *a, int n);
+char *string_toupper(char *a);
+char *cap_string(char *a)
+void print_chessboard(char (*a)[8]);
+void print_square(int size)
 
 #endif
