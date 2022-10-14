@@ -2,7 +2,7 @@
 
 /**
  * main - The main function of the program
- * @arc: argument count
+ * @argc: argument count
  * @argv: argument array
  * Return: return 0
  */
@@ -14,17 +14,15 @@ int main(int argc, char **argv)
 	if (argc < 4 || argc > 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
-	
 	o = get_op_func(argv[2]);
 
 	if (o == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
-	
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
