@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	if (argc != 2)
 	{
 		printf("Error\n");
-		exit(1);
+		return (1);
 	}
 
 	a = atoi(argv[1]);
@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 
 	for (i = 0; i < a; i++)
 	{
-		printf("%02hhx", *((char *)main + 1));
+		printf("%02hhx", *((char *)main + i));
 		if (i < a - 1)
 			printf(" ");
 		else
