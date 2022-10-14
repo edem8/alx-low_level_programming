@@ -19,12 +19,13 @@ int (*get_op_func(char *s))(int, int)
 
 	while (i < 5)
 	{
-		if (*s == ops[i][0])
+		if (*s == ops[i].op[0])
 		{
 			struct op new;
 
-			new.(*f)(int a, int b) = ops[i][1];
+			return (ops[i].f);
 		}
+		i++;
 	}
 	return (NULL);
 }
