@@ -15,8 +15,13 @@ char *str_concat(char *s1, char *s2)
 		s1 = " ";
 	if (s2 == NULL)
 		s2 = " ";
+	if (s1 == NULL && S2 == NULL)
+	{
+		s1 = " ";
+		s2 = " ";
+	}
 
-	arr = (char*)malloc(len);
+	arr = (char *)malloc(len);
 	if (arr == NULL)
 		return (NULL);
 	strcpy(arr, s1);
