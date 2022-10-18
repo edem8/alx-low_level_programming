@@ -10,9 +10,13 @@ char *str_concat(char *s1, char *s2)
 {
 	char *arr;
 	if (s1 == NULL)
-		*s1 = ' ';
+		s1 = " ";
 	if (s2 == NULL)
-		*s2 = ' ';
+		s2 = " ";
+
+	arr = malloc(sizeof(s1) * strlen(s1) + sizeof(s2) * strlen(s2) + 1);
+	if (arr == NULL)
+		return (NULL);
 	arr = strcat(s1, s2);
-	return (strdup(arr));
+	return (arr);
 }
