@@ -18,5 +18,7 @@ char *str_concat(char *s1, char *s2)
 	arr = (char*)malloc((sizeof(s1) * strlen(s1)) + (sizeof(s2) * strlen(s2)) + 1);
 	if (arr == NULL)
 		return (NULL);
+	strcpy(arr, s1);
+	strcat(arr, s2);
 	return (arr);
 }
