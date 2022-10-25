@@ -11,14 +11,30 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
+	list_t *last;
+	list_t *before_last;
 
 	new = malloc(sizeof(struct list_s));
 	if (new == NULL)
 		return (NULL);
 	new->str = strdup(str);
+	if (new->str == NULL)
+		return (NULL);
 	new->len = strlen(str);
 	new->next = NULL;
-	*head = new;
+
+	last = *(head);
+	while (last != NULL)
+	{
+		last = (*head)->next;
+		if (last != NULL)
+			before_last = last;
+	}
+	if (*(head) == NULL)
+		*(head) = new;
+	else
+		before_last->next = new;
 
 	return (new);
+	
 }
