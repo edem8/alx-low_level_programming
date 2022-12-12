@@ -9,7 +9,7 @@ size_t dlistint_len(const dlistint_t *h)
 {
 	int i = 0;
 
-	if (h == NULL)
+	if (h == NULL || h == 0)
 	{
 		dprintf(2, "Error: can't  malloc\n");
 		return (EXIT_FAILURE);
